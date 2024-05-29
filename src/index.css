@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    /* font-weight: 300; */
+    /* font-style: normal; */
+    /* background-color: #dde7f3; */
+    /* background-color: #f0f0f0; */
+background-color: #ececec;
 }
+.contact-img{
+    width:200px;
+   height: 200px;    
+   border-radius: 50%;
+}
+.h3{    font-family: "Ubuntu", sans-serif;
+}
+.h4{    font-family: "Ubuntu", sans-serif;
+}
+@media screen and (max-width: 766px) {
+    .icons {
+      display: flex;
+      flex-direction: row !important; /* Ensure flex direction is row */
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 10px;
+    }
+  }
+  .custom-background {
+    background-color: #007BFF;
+  }
+  .card__effect {
+    transition: transform 1s;
+  
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+      content: '';
+      opacity: 0;
+      z-index: -1;
+    }
+  
+    &:hover,
+    &:focus {
+      transform: scale3d(1.016, 1.016, 1);
+  
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  .btn__effect {
+    transition: transform 1s;
+  
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+      content: '';
+      opacity: 0;
+      z-index: -1;
+    }
+  
+    &:hover,
+    &:focus {
+      transform: scale3d(1.086, 1.086, 1);
+  
+      &::after {
+        opacity: .2;
+      }
+    }
+  }
+
+ 
